@@ -1,0 +1,184 @@
+.table-admin {
+	font-family: arial;
+	color: #337AB7;
+	font-size: 14px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.trythumb {
+  height: 325px;
+  background-color: powderblue;	
+}
+
+.nothingtoshow {
+	font-family: arial;
+	color: #337AB7;
+	font-size: 22px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.menu {
+	font-family: arial;
+	color: black;
+	font-size: 14px;
+	text-align: center;
+}
+
+.myright {
+	font-family: arial;
+	color: black;
+	font-size: 14px;
+	text-align: center;
+}
+
+.contactbox {
+	font-family: arial;
+	color: #09041e;
+	font-size: 12px;
+	text-align: left;
+	vertical-align: top;
+	background-color: white;
+}
+
+.copy {	
+	font-family: arial;
+	color: black;
+	font-size: 12px;
+	text-align: center;
+}
+
+.maintext {
+	font-family: arial;
+	color: black;
+	font-size: 12px;
+	text-align: left;
+	vertical-align: top;
+	
+}
+
+.maintext2 {
+	font-family: arial;
+	color: black;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: top;
+}
+
+.maintext-welcome {
+	font-family: arial;
+	color: black;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: top;
+	border:2px solid #361196;
+}
+
+.maintext-blue {
+	font-family: tahoma;
+	color: blue;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: top;
+	border:2px transparent #361196;
+	margin-left: 20px;
+}
+
+.bottomtext {
+	font-family: tahoma;
+	color: black;
+	font-size: 14px;
+	width: 250px;
+	text-align: center;
+	vertical-align: middle;
+	border:2px transparent #361196;
+	background-color: #f9eab5;
+}
+
+.rentmatrix {
+	font-family: arial;
+	color: #5E1E78;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: top;
+	border:2px solid #361196;
+}
+
+.text2 {
+	font-family: arial;
+	color: black;
+	font-size: 14px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.searchlabel {
+	font-family: arial;
+	color: #771d01;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.contactbox {
+	font-family: arial;
+	color: #09041e;
+	font-size: 14px;
+	text-align: left;
+	vertical-align: top;
+	background-color: white;
+}
+
+
+.informtext {
+	font-family: arial;
+	color: white;
+	font-size: 12px;
+	text-align: left;
+	vertical-align: top;
+	background-color: brown;
+
+}
+
+.searchbox {
+	font-family: arial;
+	color: #09041e;
+	font-size: 14px;
+	text-align: left;
+	vertical-align: top;
+	border:2px solid #771d01;
+	background-color: #f9eab5;
+}
+
+.a {	font-family: arial;
+				color: purple;
+				font-size: 14px;}
+
+.b {	font-family: tahoma;
+				color: orange;
+				font-size: 14px;}
+				
+.c {	font-family: arial;
+				color: green;
+				font-size: 18px;}
+
+.d {	font-family: verdana;
+				color: yellow;;
+				font-size: 14px;}
+
+.e {	font-family: tahoma;
+				color: violet;
+				font-size: 18px;}
+				
+.f {	font-family: arial;
+				color: pink;;
+				font-size: 10px;}
+
+.g {	font-family: tahoma;
+				color: blueviolet;
+				font-size: 16px;}
+
+.h {	font-family: arial;
+				color: gray;
+				font-size: 14px;}

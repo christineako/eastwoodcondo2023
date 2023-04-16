@@ -1,0 +1,458 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Feb 09, 2022 at 09:45 AM
+-- Server version: 10.4.6-MariaDB
+-- PHP Version: 7.1.32
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Database: `eastwoodcondo`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblads`
+--
+
+CREATE TABLE `tblads` (
+  `recno` int(11) NOT NULL,
+  `adno` int(11) NOT NULL,
+  `adtypecode` varchar(25) NOT NULL,
+  `unitcode` varchar(15) NOT NULL,
+  `adtitle` varchar(120) NOT NULL,
+  `addescription` text NOT NULL,
+  `adprice` double NOT NULL,
+  `mincontractcode` varchar(25) NOT NULL,
+  `adpayment` text NOT NULL,
+  `youtube` varchar(120) NOT NULL,
+  `adstatus` varchar(25) NOT NULL,
+  `addate` datetime NOT NULL,
+  `adtag` varchar(250) NOT NULL,
+  `metakeywords` varchar(160) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tblads`
+--
+
+INSERT INTO `tblads` (`recno`, `adno`, `adtypecode`, `unitcode`, `adtitle`, `addescription`, `adprice`, `mincontractcode`, `adpayment`, `youtube`, `adstatus`, `addate`, `adtag`, `metakeywords`) VALUES
+(1, 1, 'For Rent', 'C11110', 'Unfurnished Studio type Condo in Eastwood Excelsior', 'xxx', 15000, 'LONG', '2 months deposit is required', 'j2-l4FaRjgE', 'yes', '2022-02-06 12:53:58', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(2, 2, 'For Rent', 'C12010', 'Unfurnished Studio type with one bedroom layout in Excelsior', 'xyz', 15000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(3, 3, 'For Rent', 'D10801', 'Unfurnished Studio type Condo with 1-bedroom layout in One Orchard', 'x', 14000, 'LONG', '2 months deposit is required', 'EHqoFqK_GR4', 'no', '2022-02-06 11:18:52', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(4, 4, 'For Rent', 'd11602', 'Fully Furnished One Bedroom Condo in One Orchard Road', 'x', 25000, 'LONG', '2 months deposit is required', 'b-aE9BlVfn4', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(5, 5, 'For Rent', 'D13103', 'Unfurnished 57sqm One Bedroom Condo in One Orchard Road', 'x', 20000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(6, 6, 'For Rent', 'D21207', 'Unfurnished Studio type Condo with 1 bedroom layout in One Orchard', 'x', 18000, 'LONG', '2 months deposit is required', 'HSU_T8bHpL8', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(7, 7, 'For Rent', 'D31702', 'Unfurnished One Bedroom Condo in One Orchard Road with utility room', 'x', 18000, 'LONG', '2 months deposit is required', 'Vgf91ueEQDs', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(8, 8, 'For Rent', 'D31806', 'Unfurnished Studio type Condo in One Orchard Road for Rent', 'x', 14000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(9, 9, 'For Rent', 'D32608', 'Unfurnished two Bedroom Condo in One Orchard Road', 'x', 25000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(10, 10, 'For Rent', 'D32814', 'Unfurnished Studio type Condo in One Orchard Road', 'x', 14000, 'LONG', '2 months deposit is required', 'Pw-sXBP8utI', 'yes', '2022-02-06 12:57:30', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(11, 11, 'For Rent', 'F10910', 'Unfurnished Studio with 1-Bedroom layout in Eastwood Parkview', 'x', 15000, 'LONG', '2 months deposit is required', 'XI2w1r-AFJs', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(12, 12, 'For Rent', 'F10911', 'Unfurnished Studio type Condo in Eastwood Parkview tower 1', 'x', 16000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(13, 13, 'For Rent', 'F11006', 'Unfurnished One Bedroom Condo in Eastwood Parkview', 'x', 20000, 'LONG', '2 months deposit is required', '75YIcYqR434', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(14, 14, 'For Rent', 'F11011', 'Unfurnished 38sqm Studio with 1-br layout in Eastwood Parkview', 'x', 16000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(15, 15, 'For Rent', 'F11402', 'Unfurnished Studio type Condo in Eastwood Parkview for Rent', 'x', 16000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(16, 16, 'For Rent', 'F11404', 'Unfurnished 81sqm two Bedroom Condo in Eastwood Parkview ', 'x', 30000, 'LONG', '2 months deposit is required', 'au8wwZj3roY', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(17, 17, 'For Rent', 'F11511', 'Unfurnished Studio type Condo in Eastwood Parkview 6 months', 'x', 15000, 'LONG', '2 months deposit is required', '7yiuhy1xJ00', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(18, 18, 'For Rent', 'F11516', 'Unfurnished two Bedroom Condo in Eastwood Parkview', 'x', 28000, 'LONG', '2 months deposit is required', 'm_E1ZjSE58Q', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(19, 19, 'For Rent', 'F11703', 'Fully Furnished Studio Type condo with 1-bedroom layout in Eastwood Pa', 'x', 20000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(20, 20, 'For Rent', 'F11712', 'Fully Furnished Two Bedroom Condo in Eastwood Parkview ', 'x', 48600, 'LONG', '2 months deposit is required', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(21, 21, 'For Rent', 'F11815', 'Unfurnished One Bedroom Condo in Eastwood Parkview', 'x', 20000, 'LONG', '2 months deposit is required', 'M_BI5YZSDCQ', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(22, 22, 'For Sale', 'F11815', 'Unfurnished One Bedroom Condo in Eastwood Parkview', 'x', 5500000, 'SALE', 'Negotiable', 'M_BI5YZSDCQ', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(23, 23, 'For Rent', 'F12109', 'Unfurnished Executive Studio type corner unit in Eastwood Parkview', 'x', 19000, 'LONG', '2 months deposit is required', '03J4Omg8zek', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(24, 24, 'For Rent', 'F12116', 'Unfurnished two Bedroom Condo located on top of Eastwood Parkview', 'x', 32000, 'LONG', '2 months deposit is required', '75YIcYqR434', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(25, 25, 'For Rent', 'F13012', 'Fully Furnished Two Bedroom Condo in Eastwood Parkview ', 'x', 30000, 'LONG', '2 months deposit is required', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(26, 26, 'For Rent', 'F13201', 'Corner Unit Unfurnished Executive Studio in Eastwood Parkview', 'x', 18000, 'LONG', '2 months deposit is required', 'ZRAweiwhW-Y', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(27, 27, 'For Rent', 'F13205', 'Unfurnished One Bedroom Condo in Eastwood Parkview', 'x', 20000, 'LONG', '2 months deposit is required', '75YIcYqR434', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(28, 28, 'For Rent', 'F13306', 'One Bedroom Furnished Condo located on top of Eastwood Mall', 'x', 30000, 'LONG', '2 months deposit is required', 'jX-UAAxkJuY', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(29, 29, 'For Rent', 'F13316', 'Unfurnished two Bedroom Condo located on top of Eastwood Parkview', 'x', 30000, 'LONG', '2 months deposit is required', '75YIcYqR434', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(30, 30, 'For Rent', 'F13405', 'One Bedroom Furnished Condo located on top of Eastwood Mall', 'x', 30000, 'LONG', '2 months deposit is required', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(31, 31, 'For Rent', 'F13603', 'Fully furnished Studio with One Bedrom layout in Eastwood Parkview', 'x', 20000, 'LONG', '2 months deposit is required', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(32, 32, 'For Sale', 'F13810', 'Fully Furnished Two Bedroom Condo in Eastwood Parkview 1 with parking', 'x', 45000, 'SALE', '2 months deposit is required', '_dXuQ4u5SZs', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(33, 33, 'For Sale', 'F13906', 'Unfurnished 5-bedroom bi-level penthouse unit in Eastwood Parkview', 'x', 28000000, 'SALE', 'Negotiable', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(34, 34, 'For Rent', 'F13906', 'Unfurnished 5-bedroom bi-level penthouse unit in Eastwood Parkview', 'x', 120000, 'LONG', '2 months deposit is required', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(35, 35, 'For Sale', 'f13909', 'Fully Furnished Two Bedroom in Eastwood Parkview Penthouse', 'x', 55000, 'SALE', '2 months deposit is required', 'VzBAJjoDXbM', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(36, 36, 'For Sale', 'F20505', 'Unfurnished Studio Type Condo with Loft Sleeping Area in Eastwood Parkview', 'x', 2900000, 'SALE', 'Negotiable', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(37, 37, 'For Rent', 'F20505', 'Unfurnished Studio Type Condo with Loft Sleeping Area in Eastwood Parkview', 'x', 14000, 'LONG', '2 months deposit is required', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(38, 38, 'For Rent', 'F20716', 'Unfurnished two Bedroom Condo located on top of Eastwood Parkview', 'x', 30000, 'LONG', '2 months deposit is required', '75YIcYqR434', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(39, 39, 'For Rent', 'F20811', 'Unfurnished Studio type Condo in Eastwood Parkview for Rent', 'x', 16000, 'LONG', '2 months deposit is required', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(40, 40, 'For Rent', 'F22402', 'Fully Furnished Studio Type 1 bedroom converted in Eastwood Parkview', 'x', 20000, 'LONG', '2 months deposit is required', 'jPcT68iAk_Y', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Condo for rent, Eastwood City condo, 1 bedroom condominium, eastwood parkview 2, condo in quezon city'),
+(41, 41, 'For Rent', 'F23116', 'Unfurnished 81sqm two Bedroom Condo in Eastwood Parkview Tower', 'x', 30000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(42, 42, 'For Rent', 'F23307', 'Studio Type Condo located in Eastwood Parkview Unfurnished with aircon', 'x', 15000, 'LONG', '2 months deposit is required', 'neHNB8KDl-A', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(43, 43, 'For Rent', 'f23612', 'Spacious Fully Furnished Three Bedroom in Eastwood Parkview 2', 'x', 70000, 'LONG', '2 months deposit is required', '4pMUHx3gxiY', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(44, 44, 'For Rent', 'F23610', 'Spacious Unfurnished Two Bedroom in Eastwood Parkview 2', 'x', 70000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(45, 45, 'For Sale', 'F23610', 'Spacious Unfurnished Two Bedroom in Eastwood Parkview 2', 'x', 9500000, 'SALE', 'Negotiable', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(46, 46, 'For Rent', 'G11612', 'Fully Furnished two Bedroom Condo in One Central Park', 'x', 40000, 'LONG', '2 months deposit is required', 'CVSEos-RRfY', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(47, 47, 'For Rent', 'G11909', 'Unfurnished Studio type with 1-bedroom layout in One Central Park', 'x', 16000, 'LONG', '2 months deposit is required', 'EL1MZ_mDR8g', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(48, 48, 'For Rent', 'G12711', 'Fully Furnished Studio converted to 1-bedroom in One Central Park', 'x', 27000, 'LONG', '2 months deposit is required', 'P87CvOnpVNY', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(49, 49, 'For Rent', 'g13207', 'Fully furnished 2-Bedroom Condo in One Central Park', 'x', 75000, 'LONG', '2 months deposit is required', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(50, 50, 'For Rent', 'G13012', 'Fully furnished 2-Bedroom Condo in Eastwood Parkview 1', 'x', 35000, 'LONG', '2 months deposit is required', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(51, 51, 'For Rent', 'G20605', 'Unfurnished One Bedroom Condo in Eastwood Park Residences', 'x', 25000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(52, 52, 'For Rent', 'G20606', ' Unfurnished One Bedroom Condo in Eastwood Park Residences', 'x', 25000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(53, 53, 'For Rent', 'G20611', 'Furnished One Bedroom Condo located in Eastwood Park ', 'x', 25000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(54, 54, 'For Rent', 'G20708', 'Unfurnished One Bedroom Condo in Eastwood Park Residences', 'x', 25000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(55, 55, 'For Sale', 'G20908', 'Unfurnished One Bedroom Condo in Eastwood Park Residences', 'x', 8000000, 'SALE', 'Negotiable', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(56, 56, 'For Rent', 'G21101', 'Fully furnished 2-Bedroom Condo in Eastwood Park Residences', 'x', 45000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(57, 57, 'For Rent', 'G21205', 'One Bedroom Condo with Balcony in Eastwood Park Resid', 'x', 30000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(58, 58, 'For Sale', 'G21205', 'One Bedroom Condo with Balcony in Eastwood Park Residences', 'x', 8000000, 'SALE', 'Negotiable', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(59, 59, 'For Rent', 'G21606', 'Unfurnished One Bedroom Condo in Eastwood Park Residences', 'x', 23000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(60, 60, 'For Rent', 'G21807', 'Unfurnished One Bedroom Condo in Eastwood Park Residences with balcony', 'x', 25000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(61, 61, 'For Rent', 'G21811', 'Furnished One Bedroom Condo located in Eastwood Park ', 'x', 22000, 'LONG', '2 months deposit is required', 'Pmv_otH7W0I', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(62, 62, 'For Rent', 'G22211', 'Unfurnished One Bedroom Condo with 2 aircon in Eastwood Park Residence', 'x', 18000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(63, 63, 'For Rent', 'G22408', 'Furnished One Bedroom Condo with balcony in Eastwood Park Residences', 'x', 30000, 'LONG', '2 months deposit is required', '4_L7QE-9RQo', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(64, 64, 'For Rent', 'G22412', 'Unfurnished two Bedroom Condo with balcony in Eastwood Park Re', 'x', 33000, 'LONG', '2 months deposit is required', 'GNHvcM57GFA', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(65, 65, 'For Rent', 'G22503', 'Furnished One Bedroom Condo in Eastwood Park Residences with two airco', 'x', 20000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(66, 66, 'For Rent', 'G22510', 'Unfurnished One Bedroom Condo with 2 aircon in Eastwood Park Residence', 'x', 18000, 'LONG', '2 months deposit is required', 'kw1qhrlyyuE', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(67, 67, 'For Sale', 'G22510', 'Unfurnished One Bedroom Condo with 2 aircon in Eastwood Park Residence', 'x', 4000000, 'SALE', 'Negotiable', 'kw1qhrlyyuE', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(68, 68, 'For Rent', 'G22609', 'Fully furnished One Bedroom Condo in Eastwood Parkview with two aircon', 'x', 30000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(69, 69, 'For Rent', 'G22705', 'Unfurnished two Bedroom Condo in Eastwood Park Residences', 'x', 55000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(70, 70, 'For Rent', 'G22808', 'Unfurnished One Bedroom Condo in Eastwood Park Residences', 'x', 25000, 'LONG', '2 months deposit is required', 'MXfnmL-LpNw', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(71, 71, 'For Rent', 'G22809', 'Unfurnished One Bedroom Condo with 2 aircon in Eastwood Park Residence', 'x', 17000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(72, 72, 'For Rent', 'H10713', 'Fully furnished One Bedroom Unit in Eastwood Legrand 1', 'x', 30000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(73, 73, 'For Rent', 'H10714', 'Fully furnished One Bedroom Unit in Eastwood Legrand 1', 'x', 30000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(74, 74, 'For Sale', 'H10713', 'Fully furnished One Bedroom Unit in Eastwood Legrand 1', 'x', 6000000, 'SALE', 'Negotiable', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(75, 75, 'For Sale', 'H10714', 'Fully furnished One Bedroom Unit in Eastwood Legrand 1', 'x', 6000000, 'SALE', 'Negotiable', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(76, 76, 'For Rent', 'H13102', 'Unfurnished One Bedroom Condo in Eastwood Le Grand Tower 1', 'x', 19000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(77, 77, 'For Sale', 'H13102', 'Unfurnished One Bedroom Condo in Eastwood Le Grand Tower 1', 'x', 5000000, 'SALE', 'Negotiable', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(78, 78, 'For Rent', 'h30401', 'Unfurnished Studio type Condo in Eastwood Legrand', 'x', 15000, 'LONG', '2 months deposit is required', 'LqqXH0qJFpE', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(79, 79, 'For Rent', 'h30602', 'Unfurnished Studio type Condo in Eastwood Legrand Tower 3', 'x', 16000, 'LONG', '2 months deposit is required', '0dIwnnMt7wk', 'yes', '2022-02-06 17:25:21', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(80, 80, 'For Rent', 'h30714', 'Unfurnished Studio type Condo in Eastwood Legrand 3 (facing amenities)', 'x', 15000, 'LONG', '2 months deposit is required', 'x', 'yes', '2022-02-06 11:18:52', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(81, 81, 'For Rent', 'h31201', ' One Bedroom in Eastwood Legrand 3 unfurnished with 2 aircon', 'x', 20000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(82, 82, 'For Rent', 'h31214', 'Fully Furnished Studio type Condo in Eastwood Le Grand for Rent', 'x', 18000, 'LONG', '2 months deposit is required', 'x', 'yes', '2022-02-06 11:18:52', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(83, 83, 'For Rent', 'h31215', 'Fully Furnished Studio type Condo in Legrand Tower 3 in Eastwood City', 'x', 18000, 'LONG', '2 months deposit is required', 'x', 'yes', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(84, 84, 'For Rent', 'H32609', 'Fully Furnished 1-Bedroom Condo in One Eastwood Eastwood City', 'x', 35000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(85, 85, 'For Rent', 'I11122', 'Unfurnished Studio type 25sqm Condo in One Eastwood Quezon City', 'x', 14000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(86, 86, 'For Rent', 'I11123', 'Unfurnished Studio type 25sqm Condo in One Eastwood Quezon City', 'x', 15000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(87, 87, 'For Rent', 'I14520', ' One Bedroom Fully Furnished in One Eastwood Quezon City', 'x', 35000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(88, 88, 'For Rent', 'IBM-DY100', 'Office Space for rent in IBM Plaza Eastwood City Libis Bagumbayan Quezon City', 'PEZA Accredited', 60000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(89, 89, 'For Rent', 'IBM-DY176', 'Office Space for rent in IBM Plaza Eastwood City Libis Bagumbayan Quezon City', 'PEZA Accredited', 114400, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(90, 90, 'For Rent', 'IBM-DY233', 'Office Space for rent in IBM Plaza Eastwood City Libis Bagumbayan Quezon City', 'PEZA Accredited', 145750, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(91, 91, 'For Rent', 'IBM-DY265', 'Office Space for rent in IBM Plaza Eastwood City Libis Bagumbayan Quezon City', 'PEZA Accredited', 150800, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(92, 92, 'For Rent', 'IBM-DY750', 'Office Space for rent in IBM Plaza Eastwood City Libis Bagumbayan Quezon City', 'PEZA Accredited', 487500, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(93, 93, 'For Rent', 'OURN0902', ' One Bedroom Fully Furnished in One Uptown Residence BGC Taguig City', 'x', 35000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(94, 94, 'For Rent', 'OURN0905', ' One Bedroom Fully Furnished in One Uptown Residence BGC Taguig City', 'x', 35000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city'),
+(95, 95, 'For Rent', 'BGCMARIDIEN2-26', 'One Bedroom Fully Furnished in One Eastwood Quezon City', 'x', 65000, 'LONG', '2 months deposit is required', 'x', 'no', '0000-00-00 00:00:00', 'One Eastwood 1-Br Condo for Rent', 'Eastwood City, Quezon City Condo, Condo for Rent, condo in eastwood city');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblbldg`
+--
+
+CREATE TABLE `tblbldg` (
+  `recno` int(11) NOT NULL,
+  `bldgcode` varchar(25) NOT NULL,
+  `bldgname` varchar(120) NOT NULL,
+  `bldglocation` varchar(120) NOT NULL,
+  `bldgamenities` varchar(250) NOT NULL,
+  `bldgtag` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tblbldg`
+--
+
+INSERT INTO `tblbldg` (`recno`, `bldgcode`, `bldgname`, `bldglocation`, `bldgamenities`, `bldgtag`) VALUES
+(1, 'PV1', 'Eastwood Parkview 1', 'Eastwood City, Quezon City', 'Swimming pool, fitness gym, garden, sauna, jogging path, meeting rooms and children\'s play area', ''),
+(2, 'PV2', 'Eastwood Parkview 2', 'Eastwood City, Quezon City', 'Swimming pool, fitness gym, garden, sauna, jogging path, meeting rooms and children\'s play area', ''),
+(3, 'OCP', 'One Central Park', 'Eastwood City, Quezon City', 'swimming pool', ''),
+(4, 'EPR', 'Eastwood Park Residences', 'Eastwood City, Quezon City', 'swimming pool', ''),
+(5, 'ELG1', 'Eastwood Legrand 1', 'Eastwood City, Quezon City', 'swimming pool', ''),
+(6, 'ELG3', 'Eastwood Legrand 3', 'Eastwood City, Quezon City', 'swimming pool', ''),
+(7, 'OE', 'One Eastwood Tower 1', 'Eastwood City, Quezon City', 'fitness gym, swimming pool, function room and garden', ''),
+(8, 'TE', 'One Eastwood Tower 2', 'Eastwood City, Quezon City', 'fitness gym, swimming pool, function room and garden', ''),
+(9, 'EE1', 'Eastwood Excelsior Tower 1', 'Eastwood City, Quezon City', 'fitness gym, swimming pool, function room and garden', ''),
+(10, 'EE2', 'Eastwood Excelsior Tower 2', 'Eastwood City, Quezon City', 'fitness gym, swimming pool, function room and garden', ''),
+(11, 'OR1', 'One Orchard Road Tower 1', 'Eastwood City, Quezon City', 'fitness gym', ''),
+(12, 'OR2', 'One Orchard Road Tower 2', 'Eastwood City, Quezon City', 'fitness gym', ''),
+(13, 'OR3', 'One Orchard Road Tower 3', 'Eastwood City, Quezon City', 'fitness gym', ''),
+(14, 'GEP', 'Grand Eastwood Palazzo', 'Eastwood City, Quezon City', 'fitness gym and swimming pool', ''),
+(15, 'OURN ', 'One Uptown Residence North', 'Bonifacio Global City, Taguig City', 'fitness gym, swimming pool, function rooms, basketball courts, massage room, yoga/dance studio, entertainment room, children indoor play area, children outdoor play area, and garden', ''),
+(16, 'OURS', 'One Uptown Residence South', 'Bonifacio Global City, Taguig City', 'fitness gym, swimming pool, function rooms, basketball courts, massage room, yoga/dance studio, entertainment room, children indoor play area, children outdoor play area, and garden', ''),
+(17, 'BGC-MARIDIEN1', 'One Maridien', 'Bonifacio Global City, Taguig City', 'fitness gym, swimming pool, function room and garden', ''),
+(18, 'BGC-MARIDIEN2', 'Two Maridien', 'Bonifacio Global City, Taguig City', 'fitness gym, swimming pool, function room and garden', ''),
+(19, 'MK-MORGAN3', 'Morgan Suites Tower 3', 'Mckinley Hill, Taguig City', 'fitness gym, swimming pool, function room and garden', ''),
+(20, 'MK-VENC', 'Venice Luxury Residence Caruso Tower', 'Mckinley Hill, Taguig City', 'fitness gym, swimming pool, function room, mini theater, library, tennis courts, massage area, jogging path, garden, and direct access to Venice Piazza Mall', ''),
+(21, 'MK-FWAY1', 'Florence Way 1', 'Mckinley Hill, Taguig City', 'fitness gym, swimming pool, function room,  and garden', ''),
+(22, 'MK-VICE1', 'Viceroy Tower 1', 'Mckinley Hill, Taguig City', 'fitness gym, swimming pool, function room,  and garden', ''),
+(23, 'RM-ORW', 'One Rockwell West', 'Rockwell Center, Makati City', 'fitness gym, swimming pool, function rooms, Barbeque Area, and garden', ''),
+(24, 'RM-ONE', 'One Rockwell East', 'Rockwell Center, Makati City', 'fitness gym, swimming pool, function rooms, Barbeque Area, and garden', ''),
+(25, 'RM-LINC', 'Proscenium Lincoln Tower', 'Rockwell Center, Makati City', 'fitness gym, swimming pool, lazy river, function rooms, library, dining rooms, and garden', ''),
+(26, 'oh1 ', 'Olympic Heights 1', 'Eastwood City, Quezon City', 'fitness gym, garden, swimming pool', ''),
+(27, 'ibm', 'IBM Plaza', 'Eastwood City, Bagumbayan, Quezon City', '', ''),
+(28, 'RPR-YANOI', 'Yanoi', 'Royal Palm Residence, Acacia Estates, Taguig City', 'fitness gym, swimming pool, soccer field, function rooms, meeting rooms, karaoke room, basketball court, and garden', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblcategory`
+--
+
+CREATE TABLE `tblcategory` (
+  `recno` int(11) NOT NULL,
+  `categorycode` varchar(25) NOT NULL,
+  `categorydescription` varchar(120) NOT NULL,
+  `categorytag` varchar(25) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tblcategory`
+--
+
+INSERT INTO `tblcategory` (`recno`, `categorycode`, `categorydescription`, `categorytag`) VALUES
+(1, 'STUDIO', 'Studio Type Condo', ''),
+(2, '1BR', '1-Bedroom Condo', ''),
+(3, '2BR', '2-Bedroom Condo', ''),
+(4, '3BR', '3-Bedroom Condo', ''),
+(7, 'OFFICE', 'Office Space', ''),
+(8, 'OTHER', 'Philippine Properties', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblmincontract`
+--
+
+CREATE TABLE `tblmincontract` (
+  `recno` int(11) NOT NULL,
+  `mincontractcode` varchar(25) NOT NULL,
+  `mincontractdescription` varchar(250) NOT NULL,
+  `mincontracttag` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tblmincontract`
+--
+
+INSERT INTO `tblmincontract` (`recno`, `mincontractcode`, `mincontractdescription`, `mincontracttag`) VALUES
+(1, 'LONG', 'Minimum 6 months contract.', ''),
+(2, 'n1', 'Daily rent with minimum 1 night stay', ''),
+(3, 'SALE', 'Negotiable', ''),
+(4, 'n3', 'Daily rent with minimum 3 nights stay', ''),
+(5, 'n4', 'Daily rent with minimum 4 nights stay', ''),
+(6, 'n5', 'Daily rent with minimum 5 nights stay', ''),
+(7, 'n11', 'Daily rent with minimum 11 nights stay', ''),
+(8, 'd5', '5 days contract', ''),
+(9, 'd7', '7 days contract', ''),
+(10, 'd15', '15 days contract', ''),
+(11, 'd30', '30 days contract', ''),
+(12, 'YEARLY', 'Minimum 1 year contract.', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblsetup`
+--
+
+CREATE TABLE `tblsetup` (
+  `recno` int(11) NOT NULL,
+  `setupcode` varchar(5) NOT NULL,
+  `setupdescription` varchar(25) NOT NULL,
+  `setuptag` varchar(25) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tblsetup`
+--
+
+INSERT INTO `tblsetup` (`recno`, `setupcode`, `setupdescription`, `setuptag`) VALUES
+(1, 'UF', 'Unfurnished', ''),
+(2, 'SF', 'Semi Furnished', ''),
+(3, 'FF', 'Fully Furnished', ''),
+(4, 'SFIT', 'Semi Fitted', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tblunit`
+--
+
+CREATE TABLE `tblunit` (
+  `recno` int(11) NOT NULL,
+  `unitcode` varchar(25) NOT NULL,
+  `categorycode` varchar(25) NOT NULL,
+  `setupcode` varchar(25) NOT NULL,
+  `unitno` varchar(25) NOT NULL,
+  `bldgcode` varchar(25) NOT NULL,
+  `unitdescription` text NOT NULL,
+  `unitlocation` varchar(10) NOT NULL,
+  `unittag` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tblunit`
+--
+
+INSERT INTO `tblunit` (`recno`, `unitcode`, `categorycode`, `setupcode`, `unitno`, `bldgcode`, `unitdescription`, `unitlocation`, `unittag`) VALUES
+(1, 'C11110', 'STUDIO', 'UF', '11J', 'EE1', 'Unfurnished 36.5sqm studio type condo\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nBedroom with folding partition\n1 toilet and bathroom with provision for hot shower\nSpacious living and dining areas\nKitchen with built-in cabinets', 'EASTWOOD', 'studio type condominium in eastwood excelsior eastwood city quezon city'),
+(2, 'C12010', 'STUDIO', 'FF', '20J', 'EE1', 'Unfurnished 36.5sqm studio type condo\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nWith 1 bedroom layout with provsion for AC\n1 toilet and bathroom with provision for hot shower\nSpacious living and dining areas\nKitchen with built-in cabinets', 'EASTWOOD', 'studio type condo in eastwood excelsior eastwood city quezon city'),
+(11, 'D10801', 'STUDIO', 'UF', '8A', 'OR1', 'Unfurnished 36.5sqm studio type condo\nlocated in One Orchard Road\nEastwood City, Quezon City\n\nWith 1 bedroom layout with provision for AC\n1 toilet and bathroom with provision for hot shower\nSpacious living, dining and kitchen areas', 'EASTWOOD', 'studio type condo in one orchard road eastwood city quezon city'),
+(12, 'd11602', '1BR', 'FF', '16B', 'OR1', 'Fully furnished 57sqm one bedroom condo\nlocated in One Orchard Road, Eastwood City\n\nBedroom with built-in cabinet and AC\n1 toilet and bathroom with hot shower\nLiving room with TV, two sofa, two chairs, center table, and aircon\nDining area with 4-seater dining table with 4 chairs\nFully equipped kitchen\nUtility room with washing machine', 'EASTWOOD', '1-bedroom condo in one orchard road eastwood city quezon city'),
+(13, 'D13103', '1BR', 'UF', '31C', 'OR1', 'Unfurnished 57sqm 1-bedroom condo\nLocated in One Orchard Road\nEastwood City Quezon City\n\nBedroom with built-in cabinet and provision for AC\n1 toilet and bathroom with provision for hot shower\nSpacious living, dining, and kitchen areas\nUtility/maid\\\'s room', 'EASTWOOD', '1-bedroom unfurnished condo in one orchard road eastwood city quezon city'),
+(14, 'D21207', 'STUDIO', 'UF', '12G', 'OR2', 'Unfurnished 36.5sqm studio type condo\nlocated in One Orchard Road\nEastwood City, Quezon City\n\nWith 1 bedroom layout with provision for AC\n1 toilet and bathroom with provision for hot shower\nSpacious living, dining and kitchen areas', 'EASTWOOD', 'studio type unfurnished condo in one orchard road eastwood city quezon city'),
+(15, 'D31702', '1BR', 'UF', '17B', 'OR3', 'Unfurnished 57sqm 1-bedroom condo\nlocated in One Orchard Road, Eastwood City\n\nBedroom with built-in cabinet and AC\n1 toilet and bathroom with provision for hot shower\nSpacious living and dining areas with AC\nSpacious Kitchen\nUtility/maid\'s room', 'EASTWOOD', '1-bedroom fully furnished condo in one orchard road eastwood city quezon city'),
+(16, 'D32608', '2BR', 'UF', '26H', 'OR3', 'Unfurnished 73sqm two bedroom condo\r\nlocated in One Orchard Road, Eastwood City\r\n\r\n2 bedrooms with built-in cabinet \rand provisions for AC\n2 toilet and bathroom\r with provisions for hot shower\nSpacious living, dining and kitchen\r areas\nWith maid\\\'s/utility room', 'EASTWOOD', '2-bedroom unfurnished condo in one orchard road eastwood city quezon city'),
+(17, 'D32814', 'STUDIO', 'UF', '28N', 'OR3', 'Unfurnished 36.5sqm studio type condo\nlocated in One Orchard Road\nEastwood City, Quezon City\n\nWith 1 bedroom layout with provision for AC\n1 toilet and bathroom with provision for hot shower\nSpacious living, dining and kitchen areas', 'EASTWOOD', 'studio type with 1-bedroom layout unfurnished condo in one orchard road eastwood city quezon city'),
+(51, 'F10911', 'STUDIO', 'UF', '9K', 'PV1', '38sqm studio type condo\r\nlocated on top of Eastwood Mall\r\nEastwood Parkview, Eastwood City\r\n\r\nUnfurnished with one aircon\r\nOne bedroom layout\r\nOne toilet and bathroom\r\nKitchen, living and dining areas\r', 'EASTWOOD', 'studio type unfurnished condo in eastowod parkview eastwood city quezon city'),
+(52, 'F10910', 'STUDIO', 'UF', '9J', 'PV1', 'Unfurnished 38sqm studio type condo\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nWith 1 bedroom layout\nBedroom with AC\n1 toilet and bathroom\nliving, dining and kitchen', 'EASTWOOD', 'studio type condo unfurnished in eastowod parkview eastwood city quezon city'),
+(53, 'F11006', '1BR', 'UF', '10F', 'PV1', 'Unfurnished 57sqm 1-bedroom condo\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nBedroom with built-in cabinet and AC\n1 toilet and bathroom\nSpacious living and dining areas\nKitchen\nUtility/maid\'s room\nExtra toilet', 'EASTWOOD', '1-bedroom type 57sqm condo unfurnished in eastowod parkview eastwood city quezon city'),
+(54, 'F11011', 'STUDIO', 'UF', '10K', 'PV1', 'Unfurnished 38sqm studio type condo\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nWith 1 bedroom layout\nBedroom with AC\n1 toilet and bathroom\nliving, dining and kitchen', 'EASTWOOD', 'studio type 38sqm condo unfurnished in eastowod parkview eastwood city quezon city'),
+(55, 'F11402', 'STUDIO', 'UF', '14B', 'PV1', 'Unfurnished 38sqm studio type condo\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nWith 1 bedroom layout\nBedroom with AC\n1 toilet and bathroom\nliving, dining and kitchen\nWith view of the swimming pool', 'EASTWOOD', 'unfurnished 38sqm studio type condo in eastwood parkview eastwood city quezon city'),
+(56, 'F11404', '2BR', 'UF', '14D', 'PV1', 'Unfurnished 81sqm two bedroom condo\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nMaster\'s bedroom with AC, built-in cabinet, and ensuite toilet & bathroom\nSecond berdoom with AC and built-in cabinet\nOne toilet & bathroom\nSpacious living and dining area\nKitchen with built-in cabinet, and provision for washing machine\nUtility/maid\\\'s room\nExtra toilet\nWith view of the swimming pool and garden', 'EASTWOOD', '2-bedroom unfurnished condo in eastwood parkview eastwood city quezon city'),
+(57, 'F11511', 'STUDIO', 'UF', '15K', 'PV1', 'Unfurnished 38sqm studio type condo\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nWith 1 bedroom layout\nBedroom with AC\n1 toilet and bathroom\nliving, dining and kitchen', 'EASTWOOD', 'unfurnished studio type condo in eastwood parkview eastwood city quezon city'),
+(58, 'F11516', '2BR', 'UF', '15P', 'PV1', '77sqm unfurnished two bedroom condo\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nMaster\'s bedroom with AC, built-in cabinet, and ensuite toilet & bathroom\nSecond berdoom with AC and built-in cabinet\nOne toilet & bathroom\nSpacious living and dining area\nKitchen with built-in cabinet, and provision for washing machine\nUtility/maid\'s room\nExtra toilet', 'EASTWOOD', 'unfurnished 2-bedroom condo in eastwood parkview eastwood city quezon city'),
+(59, 'F11703', 'STUDIO', 'FF', '17C', 'PV1', 'Fully furnished 38sqm studio type \r\nlocated on top of Eastwood Mall\r\nEastwood Parkview, Eastwood City\r\n\r\n1 bedroom layout \r\n1 toilet and bathroom\r\nKitchen, living and dining areas', 'EASTWOOD', 'fully furnished studio type condo in eastwood parkview eastwood city quezon city'),
+(60, 'F11712', '2BR', 'SF', '17L', 'PV1', 'Semi furnished 81sqm two bedroom condo\r\nLocated on top of Eastwood Mall\r\nEastwood Parkview, Eastwood City\r\n\r\n2 bedrooms with cabinet and AC\n2 toilet and bathroom with hot shower\nLiving and dining areas with aircon\nUtility/maid\\\'s room\nExtra toilet ', 'EASTWOOD', 'semi furnished 2-bedroom condo in eastwood parkview eastwood city quezon city'),
+(61, 'F11815', '1BR', 'uf', '18O', 'PV1', 'Unfurnished 57sqm 1-bedroom condo\nLocated on top of Eastwood Mall\r\nEastwood Parkview, Eastwood City\r\n\r\n1 bedroom\r with built-in cabinet and AC\n2 toilet and bathroom   \r\nspacious living and dining areas\r\nkitchen\r\nutility/maid\\\'s room ', 'EASTWOOD', 'unfurnished 57sqm 1-bedroom condo in eastwood parkview eastwood city quezon city'),
+(62, 'F12109', 'STUDIO', 'UF', '21I', 'PV1', 'Unfurnished 46.5sqm executive studio type condo\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nCorner unit with view Eastwood City Open Park\n1 bedroom with built-in cabinet and AC\n1 toilet and bathroom with provision for water heater\nliving, dining and kitchen', 'EASTWOOD', 'unfurnished studio type 46.5sqm condo in eastwood parkview eastwood city quezon city'),
+(63, 'F12116', '2BR', 'UF', '21P', 'PV1', '77sqm unfurnished two bedroom condo\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nMaster\\\'s bedroom with AC, built-in cabinet, and ensuite toilet & bathroom\nSecond berdoom with AC and built-in cabinet\nOne toilet & bathroom\nSpacious living and dining area\nKitchen with built-in cabinet, and provision for washing machine\nUtility/maid\\\'s room\nExtra toilet', 'EASTWOOD', 'unfurnished 2-bedroom77sqm condo in eastwood parkview eastwood city quezon city'),
+(64, 'F13012', '2BR', 'FF', '30L', 'PV1', 'Fully furnished 81sqm two bedroom condo\r\nLocated on top of Eastwood Mall\r\nEastwood Parkview, Eastwood City\r\n\r\nMaster\\\'s bedrom with built-in cabinet, AC, and ensuite toilet & bathroom with hot shower\nSecond bedroom with built-in cabinet and AC\n1 toilet and bathroom with hot shower\nLiving and dining areas with aircon\r, 3-seater sofa-bed, center table, TV, 6-seater dining table, 6 dining chairs, and electric fan\nFully equipped kitchen\nUtility/maid\\\'s room and extra toilet', 'EASTWOOD', 'fully furnished two-bedroom 81sqm condo in eastwood parkview eastwood city quezon city'),
+(65, 'F13201', 'STUDIO', 'UF', '32A', 'PV1', 'Unfurnished 46.5sqm executive studio type condo\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nCorner unit with view Antipolo mountains\n1 bedroom with built-in cabinet and AC\n1 toilet and bathroom with provision for water heater\nliving, dining and kitchen', 'EASTWOOD', 'unfurnished executive studio type 46.5sqm condo in eastwood parkview eastwood city quezon city'),
+(66, 'F13205', '1BR', 'UF', '32E', 'PV1', 'Unfurnished 57sqm 1-bedroom condo\nLocated on top of Eastwood Mall\r\nEastwood Parkview, Eastwood City\r\n\r\n1 bedroom\r with built-in cabinet and AC\n2 toilet and bathroom   \r\nspacious living and dining areas\r\nkitchen\r\nutility/maid\'s room ', 'EASTWOOD', 'unfurnished one-bedroom 57sqm condo in eastwood parkview one eastwood city quezon city'),
+(67, 'F13306', '1BR', 'FF', '33F', 'PV1', 'Fully furnished 57sqm one bedroom condo\nlocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nBedroom with queen sized bed, built-in cabinet, and AC\n1 toilet and bathroom with hot shower\n1 extra toilet\nspacious living room with aircon, sofa bed and TV\n6-seater dining area with 6 chairs\nKitchen with refrigerator, microwave oven, rice cooker, and cooking utensils  \nUtility/maid\\\'s room\n', 'EASTWOOD', 'fully furnished one-bedroom 57sqm condo in eastwood parkview one eastwood city quezon city'),
+(68, 'F13316', '2br', 'UF', '33P', 'PV1', '77sqm unfurnished two bedroom condo\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nMaster\\\'s bedroom with AC, built-in cabinet, and ensuite toilet & bathroom\nSecond berdoom with AC and built-in cabinet\nOne toilet & bathroom\nSpacious living and dining area\nKitchen with built-in cabinet, and provision for washing machine\nUtility/maid\\\'s room\nExtra toilet', 'EASTWOOD', 'unfurnished two-bedroom 77sqm condo in eastwood parkview one eastwood city quezon city'),
+(69, 'F13405', '1BR', 'FF', '34E', 'PV1', 'Fully furnished 57sqm one bedroom condo\nlocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nBedroom with queen sized bed, built-in cabinet, and AC\n1 toilet and bathroom with hot shower\n1 extra toilet\nspacious living room with aircon, sofa bed and TV\n6-seater dining area with 6 chairs\nKitchen with refrigerator, microwave oven, rice cooker, and cooking utensils  \nUtility/maid\\\'s room\n', 'EASTWOOD', 'fully furnished one-bedroom 57sqm condo in eastwood parkview one eastwood city quezon city'),
+(70, 'F13603', 'STUDIO', 'FF', '36C', 'PV1', 'Fully furnished 38sqm studio type condo\nlocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nBedroom with bed, built-in cabinet, and AC.\nDining area with 4-seater dining set. \nLiving room with comfortable sofa, and TV\nBathroom with hot shower. \nKitchen with ref, stove and microwave oven. ', 'EASTWOOD', 'fully furnished studio type 38sqm condo in eastwood parkview one eastwood city quezon city'),
+(71, 'F13810', '2BR', 'FF', '38J', 'PV1', 'Fully furnished 81sqm two bedroom condo\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nAir conditioned bedrooms with cabinet and study tables\nTwo toilet & bathrooms with hot shower\nLiving room with aircon, sofa and TV\n6-seater dining area with 6 chairs \nKitchen with refrigerator, microwave oven and cooking facilities\nUtility/maid\'s room\nExtra toilet ', 'EASTWOOD', 'fully furnished 81sqm 2-bedroom condo in eastwood parkview one eastwood city quezon city'),
+(72, 'F13906', '3BR', 'UF', '39F', 'PV1', 'The only 288sqm 5-Bedroom penthouse bi-level condo in Eastwood City.\r\n\r\nUnfurnished 288sqm combined 5 units condo\r\nlocated on top of Eastwood Mall\r\nEastwood City, Quezon City\r\n\r\nVery spacious master\\\'s bedroom with walk-in closet and en suite bathroom with bath tub. 2 bedroom share a common bathroom. Family area with view overlooking Manila skyline and Manila bay sunset. Guest bedroom, common bathroom, kitchen, maid\\\'s room with own toilet, utility area, storage room. A very spacious living and dining areas surrounded by all-glass windows. A party-size balcony with a view of both the Laguna de Bay and Manila Bay despite the approximately 16-kilometer distance in between.', 'EASTWOOD', 'fully furnished 288sqm bi-level 5-bedroom condo in eastwood parkview one eastwood city quezon city'),
+(73, 'F13909', '2BR', 'FF', '39I', 'PV1', 'Fully furnished 81sqm two bedroom condo\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nAir conditioned bedrooms with cabinet and study tables\nTwo toilet & bathrooms with hot shower\nLiving room with aircon, sofa and TV\n6-seater dining area with 6 chairs \nKitchen with refrigerator, microwave oven and cooking facilities\nUtility/maid\'s room\nExtra toilet ', 'EASTWOOD', 'fully furnished 81sqm two-bedroom condo in eastwood parkview one eastwood city quezon city'),
+(101, 'F20505', 'STUDIO', 'UF', '5E', 'PV2', 'Unfurnished 29sqm studio type condo with loft sleeping area\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nWith aircon and built-in cabinet\nLoft sleeping area\n1 toilet and bathroom with provision for hot shower\nliving, dining and kitchen\nLocated on the amenity level', 'EASTWOOD', 'unfurnished 29sqm studio with loft sleeping area in eastwood parkview one eastwood city quezon city'),
+(102, 'F20716', '2BR', 'FF', '7P', 'PV2', 'Unfurnished 77sqm two bedroom condo\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nMaste\\r\'s bedroom with AC, built-in cabinet, and ensuite toilet & bathroom\nSecond berdoom with AC and built-in cabinet\nOne toilet & bathroom\nSpacious living and dining area\nKitchen with built-in cabinet, and provision for washing machine\nUtility/maid\\\'s room\nExtra toilet', 'EASTWOOD', 'unfurnished 77sqm two bedroom residential condo in eastwood parkview one eastwood city quezon city'),
+(103, 'F20811', 'STUDIO', 'UF', '8K', 'PV2', 'Unfurnished 38sqm studio type condo\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nWith 1 bedroom layout\nBedroom with AC\n1 toilet and bathroom\nliving, dining and kitchen', 'EASTWOOD', 'unfurnished 38sqm studio type residential condo in eastwood parkview two eastwood city quezon city'),
+(104, 'F22402', 'STUDIO', 'FF', '24B', 'PV2', 'Fully furnished 38sqm studio type \r converted to one-bedroom condo\nlocated on top of Eastwood Mall\r\nEastwood Parkview, Eastwood City\r\n\r\nBedroom with big bed, cabinet, and AC\n1 toilet and bathroom\r with hot shower\nLiving room with sofa, center table, TV, and AC\nDining room with 4-seater dining table with 4 chairs\nFull equipped kitchen', 'EASTWOOD', 'unfurnished 38sqm studio converted to 1 bedroom condo in eastwood parkview 2 eastwood city quezon city'),
+(106, 'F23116', '2BR', 'UF', '31P', 'PV2', '77sqm unfurnished two bedroom condo\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nMaster\\\'s bedroom with AC, built-in cabinet, and ensuite toilet & bathroom\nSecond berdoom with AC and built-in cabinet\nOne toilet & bathroom\nSpacious living and dining area\nKitchen with built-in cabinet, and provision for washing machine\nUtility/maid\\\'s room\nExtra toilet', 'EASTWOOD', 'unfurnished 81sqm two bedroom condo in eastwood parkview 1 eastwood city quezon city'),
+(107, 'F23307', 'STUDIO', 'UF', '33G', 'PV2', 'Unfurnished 29sqm studio type condo\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nWith aircon and built-in cabinet\n1 toilet and bathroom with provision for hot shower\nliving, dining and kitchen', 'EASTWOOD', 'unfurnished 29sqm studio condo in eastwood parkview two eastwood city quezon city'),
+(108, 'F23610', '2BR', 'UF', '36J', 'PV2', '77sqm unfurnished two bedroom condo\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nMaster\'s bedroom with AC, built-in cabinet, and dresser\nSecond berdoom with AC and built-in cabinet\nTwo toilet & bathrooms with provisions for water heater\nSpacious living and dining area with built-in cabinets and shelves\nKitchen with built-in cabinet, and provision for washing machine\nUtility/maid\'s room\nExtra toilet', 'EASTWOOD', 'unfurnished 81sqm two bedroom residential condo in eastwood parkview 2 eastwood city quezon city'),
+(109, 'F23612', '3BR', 'FF', '36L', 'PV2', '115sqm fully furnished corner unit\r\nlocated on top of Eastwood Mall\r\nEastwood Parkview, Eastwood City\r\n\r\n3 bedrooms each with 1 big bed, cabinets, and AC\r\n2 toilet and bathrooms with hot shower\r\nSpacious living and dining areas\r\nReclining 3-seater couch, TV, coffee table\r\n6-seater dining table with 6 chairs  \r\nKitchen with refrigerator and cooking facilities\r\nUtility room with washing machine\r\nExtra toilet\r\n\r\nWith unobstructed view of Antipolo mountains', 'EASTWOOD', 'fully furnished 115sqm three bedroom residential condo in eastwood parkview two eastwood city quezon city'),
+(131, 'G11612', '2BR', 'FF', '16L', 'OCP', 'Fully furnished 94sqm two bedroom condo with balcony\nLocated on top of Eastwood Mall\nOne Central Park, Eastwood City\n\nMaster\'s bedroom with big bed, built-in cabinet, and AC\nSecond bedroom with single bunkbed, built-in cabinet, and AC\nTwo toilet and bathrooms with hot shower\nSpacious living room with aircon, sofa, center table, and TV\nDining area with 6-seater dining table with 6 chairs\nFully equipped kitchen\nUtility/maid\'s room\nExtra toilet\nBalcony ', 'EASTWOOD', 'fully furnished 115sqm three bedroom residential condo in eastwood parkview 2 eastwood city quezon city'),
+(132, 'G11909', 'STUDIO', 'UF', '19I', 'OCP', 'Unfurnished 43sqm studio type condo\nlocated on top of Eastwood Mall\nEastwood City, Quezon City\n\nWith 1 bedroom layout, built-in cabinet, and 1 AC\n1 toilet and bathroom with provision for hot shower\nSpacious living, dining and kitchen areas', 'EASTWOOD', 'unfurnished 43sqm studio type with 1 bedroom layout residential condo in one central park eastwood city quezon city'),
+(133, 'G12711', '1BR', 'FF', '27K', 'OCP', 'Fully furnished 36sqm studio type \r converted to one-bedroom condo\nlocated on top of Eastwood Mall\r\nEastwood Parkview, Eastwood City\r\n\r\nBedroom with big bed, cabinet, and AC\n1 toilet and bathroom\r with hot shower\nLiving room with sofa, center table, TV, and AC\nDining room with 4-seater dining table with 4 chairs\nFully equipped kitchen', 'EASTWOOD', 'furnished 43sqm studio type with 1 bedroom layout residential condo in one central park eastwood city quezon city'),
+(134, 'G13012', '2BR', 'FF', '30L', 'OCP', 'Fully furnished 94Sqm two bedroom condo with balcony\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nMaster\\\'s bedroom with big bed, AC, built-in cabinet\nSecond berdoom with big bed, AC and built-in cabinet\n2 toilet & bathrooms with hot shower\nSpacious living with sofa, center table, TV, and AC\nDining area with 6-seater dining set and 6 chairs\nFully equipped kitchen\nUtility/maid\\\'s room\nExtra toilet\nBalcony', 'EASTWOOD', 'fully furnished 94sqm two bedroom layout residential condo in one central park eastwood city quezon city'),
+(135, 'G13207', '2BR', 'FF', '32GH', 'OCP', 'Fully furnished 129sqm combined corner unit 3-bedroom condo\r with 2 balcony\nlocated on top of Eastwood Mall\r\nEastwood City, Quezon City\r\n\r\n2 bedrooms each with big bed, TV, AC, built-in cabinets, sofa, and balcony\n2 toilet & bathrooms with hot shower\nFully equipped kitchen with service door\nSpacious living room area with sofa, TV, and AC\nDining area with 6-seater dining table with 6 chairs, and a bar\nUtility/maid\'s room with washing machine and built-in cabinets\nPowder room', 'EASTWOOD', 'fully furnished 129sqm special two bedroom layout residential condo in one central park eastwood city quezon city'),
+(152, 'G20605', '1BR', 'UF', '6E', 'EPR', 'Unfurnished 67sqm one bedroom corner unit with balcony\nlocated on top of Eastwood Mall\nEastwood Park Residences, Eastwood City\n\nBedroom with built-in cabinet, and AC\n1  toilet and bathroom with provision for hot shower\nSpacious living and dining areas with aircon\nKitchen\nUtility/maid\\\'s room\nExtra toilet\nBalcony', 'EASTWOOD', 'unfurnished 67sqm one bedroom  residential condo in eastwood park residences eastwood city quezon city'),
+(153, 'G20606', '1BR', 'UF', '6F', 'EPR', 'Unfurnished 62sqm one bedroom condo with balcony\nlocated on top of Eastwood Mall\nEastwood Park Residences, Eastwood City\n\nBedroom with built-in cabinet, and AC\n1  toilet and bathroom with provision for hot shower\nSpacious living and dining areas with aircon\nKitchen\nUtility/maid\'s room\nExtra toilet\nBalcony', 'EASTWOOD', 'unfurnished 62sqm one bedroom  residential condo in eastwood park residences eastwood city quezon city'),
+(154, 'G20611', '1BR', 'FF', '6K', 'EPR', 'Fully furnished 36sqm one bedroom condo\r\nLocated on top of Eastwood Mall\r\nEastwood Park Residences, Eastwood City\r\n\r\nBedroom with bed, built-in cabinet\r, and AC\n1 toilet and bathroom with hot shower\r\nLiving room with sofa, center table, TV, and aircon \nDining area with 4-seater dining table with 4 chairs\nFully equipped kitchen', 'EASTWOOD', 'fully furnished 36sqm one bedroom residential condo in eastwood park residences eastwood city quezon city'),
+(155, 'G20708', '1BR', 'UF', '7H', 'EPR', 'Unfurnished 67sqm one bedroom corner unit with balcony\nlocated on top of Eastwood Mall\nEastwood Park Residences, Eastwood City\n\nBedroom with built-in cabinet, and AC\n1  toilet and bathroom with provision for hot shower\nSpacious living and dining areas with aircon\nKitchen\nUtility/maid\\\'s room\nExtra toilet\nBalcony', 'EASTWOOD', 'unfurnished 67sqm one bedroom  condo in eastwood park residences eastwood city quezon city'),
+(156, 'G20908', '1BR', 'UF', '9H', 'EPR', 'Unfurnished 67sqm one bedroom corner unit with balcony\nlocated on top of Eastwood Mall\nEastwood Park Residences, Eastwood City\n\nBedroom with built-in cabinet, and AC\n1  toilet and bathroom with provision for hot shower\nSpacious living and dining areas with aircon\nKitchen\nUtility/maid\'s room\nExtra toilet\nBalcony', 'EASTWOOD', 'unfurnished 67sqm one bedroom with balcony condo in eastwood park residences eastwood city quezon city'),
+(157, 'G21101', '2BR', 'FF', '11A', 'EPR', 'Fully furnished 89.5sqm two bedroom condo with balcony\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nMaster\\\'s bedroom with big bed, AC, built-in cabinet\nSecond berdoom with big bed, AC and built-in cabinet\n2 toilet & bathrooms with hot shower\nSpacious living with sofa, center table, TV, and AC\nDining area with 6-seater dining set and 6 chairs\nFully equipped kitchen\nUtility/maid\\\'s room\nExtra toilet\nBalcony', 'EASTWOOD', 'fully furnished 89.5sqm 2 bedroom with balcony condo in eastwood park residences eastwood city quezon city'),
+(158, 'G21205', '1BR', 'FF', '12E', 'EPR', 'Fully furnished 67sqm one bedroom condo with balcony\nlocated on top of Eastwood Mall\nEastwood Park Residences, Eastwood City\n\nBedroom with bed, dresser, built-in cabinet, and AC\n1  toilet and bathroom with hot shower\nSpacious living room with aircon, sofa, side chairs, center table, TV, and AC\nDining area with 6-seater dining table with 6 chairs\nFully equipped kitchen\nUtility/maid\\\'s room with washing machine\nExtra toilet\nBalcony', 'EASTWOOD', 'fully furnished 67sqm 1 bedroom with balcony condo in eastwood park residences eastwood city quezon city'),
+(159, 'G21606', '1BR', 'UF', '16F', 'EPR', 'Unfurnished 67sqm one bedroom condo with balcony\nlocated on top of Eastwood Mall\nEastwood Park Residences, Eastwood City\n\nBedroom with built-in cabinet, and AC\n1  toilet and bathroom with provision for hot shower\nSpacious living and dining areas with aircon\nKitchen\nUtility/maid\'s room\nExtra toilet\nBalcony', 'EASTWOOD', 'unfurnished 62sqm 1 bedroom with balcony condo in eastwood park residences eastwood city quezon city'),
+(160, 'G21807', '1BR', 'UF', '18G', 'EPR', 'Unfurnished 62sqm one bedroom condo with balcony\nlocated on top of Eastwood Mall\nEastwood Park Residences, Eastwood City\n\nBedroom with built-in cabinet, and AC\n1  toilet and bathroom with provision for hot shower\nSpacious living and dining areas with aircon\nKitchen\nUtility/maid\'s room\nExtra toilet\nBalcony', 'EASTWOOD', 'unfurnished 62sqm 1 bedroom with balcony residential condo in eastwood park residences eastwood city quezon city'),
+(161, 'G21811', '1BR', 'FF', '18K', 'EPR', 'Fully furnished 36sqm one bedroom condo\r\nLocated on top of Eastwood Mall\r\nEastwood Park Residences, Eastwood City\r\n\r\nBedroom with big bed, built-in cabinet\r, and AC\n1 toilet and bathroom with hot shower\r\nLiving room with sofa, center table, TV, and aircon \nDining area with 4-seater dining table with 4 chairs\nFully equipped kitchen', 'EASTWOOD', 'fully furnished 36sqm 1 bedroom with balcony residential condo in eastwood park residences eastwood city quezon city'),
+(162, 'G22211', '1BR', 'UF', '22K', 'EPR', 'Unfurnished 36sqm one bedroom condo\r\nLocated on top of Eastwood Mall\r\nEastwood Park Residences, Eastwood City\r\n\r\nBedroom with built-in cabinet\r and AC\n1 toilet and bathroom with provision for hot shower\r\nLiving and dining areas with AC\nKitchen', 'EASTWOOD', 'unfurnished 36sqm 1 bedroom residential condo in eastwood park residences eastwood city quezon city'),
+(163, 'G22408', '1BR', 'FF', '24H', 'EPR', 'Fully furnished 67sqm one bedroom condo with balcony\nlocated on top of Eastwood Mall\nEastwood Park Residences, Eastwood City\n\nBedroom with bed, dresser, built-in cabinet, and AC\n1  toilet and bathroom with hot shower\nSpacious living room with aircon, sofa, side chairs, center table, TV, and AC\nDining area with 6-seater dining table with 6 chairs\nFully equipped kitchen\nUtility/maid\\\'s room with washing machine\nExtra toilet\nBalcony', 'EASTWOOD', 'fully furnished 67sqm 1 bedroom with balcony residential condo in eastwood park residences eastwood city quezon city'),
+(164, 'G22412', '2BR', 'UF', '24L', 'EPR', 'Unfurnished 89.5sqm two bedroom condo with balcony\nLocated on top of Eastwood Mall\nEastwood Parkview, Eastwood City\n\nMaster\\\'s bedroom with AC, built-in cabinet\nSecond berdoom with AC and built-in cabinet\n2 toilet & bathrooms with provision for hot shower\nSpacious living and dining area\nKitchen with built-in cabinet\nUtility/maid\\\'s room\nExtra toilet', 'EASTWOOD', 'fully furnished 89.5sqm 2 bedroom with balcony residential condo in eastwood park residences eastwood city quezon city'),
+(165, 'G22503', '1BR', 'FF', '25C', 'EPR', 'Fully furnished 43sqm one bedroom condo\r\nLocated on top of Eastwood Mall\r\nEastwood Park Residences, Eastwood City\r\n\r\nBedroom with big bed, built-in cabinet\r, and AC\n1 toilet and bathroom with hot shower\r\nLiving room with sofa, TV, and aircon \nDining area with 4-seater dining table with 4 chairs\nFully equipped kitchen', 'EASTWOOD', 'fully furnished 43sqm 1 bedroom with balcony residential condo in eastwood park residences eastwood city quezon city'),
+(166, 'G22510', '1BR', 'UF', '25J', 'EPR', 'Unfurnished 40.5sqm one bedroom condo\r\nLocated on top of Eastwood Mall\r\nEastwood Park Residences, Eastwood City\r\n\r\nBedroom with built-in cabinet\r and AC\n1 toilet and bathroom with provision for hot shower\r\nLiving and dining areas with AC\nKitchen', 'EASTWOOD', '40.5sqm unfurnished 1 bedroom residential condo in eastwood park residences eastwood city quezon city'),
+(167, 'G22609', '1BR', 'FF', '26I', 'EPR', 'Fully furnished 43sqm one bedroom condo\r\nLocated on top of Eastwood Mall\r\nEastwood Park Residences, Eastwood City\r\n\r\nBedroom with big bed, side table, built-in cabinet\r, and AC\n1 toilet and bathroom with hot shower\r\nLiving room with sofa, center table, TV, and aircon \nDining area with 6-seater dining table with 6 chairs\nFully equipped kitchen\n\n', 'EASTWOOD', '43sqm fully furnished 1 bedroom residential condo in eastwood park residences eastwood city quezon city'),
+(168, 'G22705', '3BR', 'UF', '27E', 'EPR', 'Unfurnished 129sqm three bedroom condo with 2 balcony\nLocated on top of Eastwood Mall\nEastwood Park Residences, Eastwood City\n\nMaster\'s bedrooms with walk-in closet, AC, balcony, and ensuite toilet & bathroom\nSecond bedroom with built-in cabinet and AC\nThird bedroom with built-in cabinet, AC, and balcony\n1 toilet and bathroom with provision for hot shower\nLiving and dining areas with aircon\nSpacious kitchen with service door\nUtility/maid\'s room\nExtra toilet', 'EASTWOOD', 'unfurnished 3 bedroom with 2 balcony residential condo in eastwood park residences eastwood city quezon city'),
+(169, 'G22808', '1BR', 'UF', '28H', 'EPR', 'Unfurnished 67sqm one bedroom corner unit with balcony\nlocated on top of Eastwood Mall\nEastwood Park Residences, Eastwood City\n\nBedroom with built-in cabinet, and AC\n1  toilet and bathroom with provision for hot shower\nSpacious living and dining areas with aircon\nKitchen\nUtility/maid\\\'s room\nExtra toilet\nBalcony', 'EASTWOOD', 'unfurnished 1 bedroom with balcony residential condo in eastwood park residences eastwood city quezon city'),
+(170, 'G22809', '1BR', 'UF', '28I', 'EPR', 'Unfurnished 36sqm one bedroom condo\r\nLocated on top of Eastwood Mall\r\nEastwood Park Residences, Eastwood City\r\n\r\nBedroom with built-in cabinet\r and AC\n1 toilet and bathroom with provision for hot shower\r\nLiving and dining areas with AC\nKitchen', 'EASTWOOD', 'unfurnished 1 bedroom 43sqm residential condo in eastwood park residences eastwood city quezon city'),
+(201, 'H10713', '1BR', 'FF', '7M', 'ELG1', 'Fully furnished 40sqm one bedroom condo\r\nLocated in Eastwood Legrand Tower 1, Eastwood City\r\n\r\nBedroom with big bed, built-in cabinet, and AC\n1 toilet and bathroom with hot shower \nLiving and dining areas with sofa, TV, dining table with chairs, AC\nFully equipped kitchen\nNicely renovated', 'EASTWOOD', 'fully furnished 1 bedroom 40sqm residential condo in eastwood legrand 1 eastwood city quezon city'),
+(202, 'H10714', '1BR', 'FF', '7N', 'ELG1', 'Fully furnished 40sqm one bedroom condo\r\nLocated in Eastwood Legrand Tower 1, Eastwood City\r\n\r\nBedroom with big bed, built-in cabinet, and AC\n1 toilet and bathroom with hot shower \nLiving and dining areas with sofa, TV, dining table with chairs, AC\nFully equipped kitchen\nNicely renovated', 'EASTWOOD', 'fully furnished 40sqm 1 bedroom residential condo in eastwood legrand 1 eastwood city quezon city'),
+(203, 'H13102', '1BR', 'UF', '31B', 'ELG1', 'Corner unit unfurnished 42sqm one bedroom condo\nLocated on in Legrand Tower 1, Eastwood City\n\nBedroom with built-in cabinet and AC\n1 toilet and bathroom with provision for hot shower\nLiving and dining areas with AC\nKitchen with cabinets', 'EASTWOOD', 'unfurnished 42sqm 1 bedroom residential condo in eastwood legrand 1 eastwood city quezon city'),
+(220, 'h30401', 'STUDIO', 'UF', '4A', 'ELG3', 'Unfurnished 32sqm studio type condo\r\nlocated in Eastwood Legrand 3\r\nEastwood City, Quezon City\r\n\r\nWith built-in cabinets, 2-burner stove and range hood\r\n1 toilet and bathroom with provision for hot shower\nWith provision for window-type AC', 'EASTWOOD', 'unfurnished 32sqm studio type residential condo in eastwood legrand 3 eastwood city quezon city'),
+(221, 'h30602', 'STUDIO', 'UF', '6B', 'ELG3', 'Unfurnished 32sqm studio type condo\nlocated in Eastwood Legrand 3\nEastwood City, Quezon City\n\nWith built-in cabinets, 2-burner stove and range hood\n1 toilet and bathroom with provision for hot shower\nWith provision for window-type AC\nLocated on the amenity level', 'EASTWOOD', 'unfurnished 30sqm studio type on the amenity level of eastwood legrand 3 eastwood city quezon city'),
+(222, 'h30714', 'STUDIO', 'UF', '7N', 'ELG3', 'Unfurnished 32sqm studio type condo\nlocated in Eastwood Legrand 3\nEastwood City, Quezon City\n\nWith built-in cabinets, 2-burner stove and range hood\n1 toilet and bathroom with provision for hot shower\nWith provision for window-type AC\nWindows overlooking the swimming pool', 'EASTWOOD', 'unfurnished 30sqm studio type residential condo in eastwood legrand 3 eastwood city quezon city'),
+(223, 'H31201', '1BR', 'UF', '12A', 'ELG3', 'Unfurnished 39sqm one bedroom condo\nLocated on top of Eastwood Mall\nEastwood Le Grand, Eastwood City\n\nBedroom with built-in cabinet and AC\n1 toilet and bathroom with provision for water heater\nLiving and dining areas with aircon\nKitchen with built-in cabinets', 'EASTWOOD', 'unfurnished 39sqm 1-bedroom residential condo in eastwood legrand 3 eastwood city quezon city'),
+(224, 'H31214', 'STUDIO', 'FF', '12N', 'ELG3', 'Fully furnished 30sqm studio type\nEastwood Legrand 3, Eastwood City\n\nToilet and bathroom with hot shower\nBig bed, 3-seater sofa, 4-seater dining table with 4 chairs, TV, ref, microwave oven, rice cooker, cooker,  range hood, and washing machine\nWindows overlooking the swimming pool', 'EASTWOOD', 'fully furnished 30sqm studio type residential condo in eastwood legrand 3 eastwood city quezon city'),
+(225, 'H31215', 'STUDIO', 'FF', '12O', 'ELG3', 'Fully furnished 30sqm studio type\nEastwood Legrand 3, Eastwood City\n\nToilet and bathroom with hot shower\nBig bed, 3-seater sofa, 4-seater dining table with 4 chairs, TV, ref, microwave oven, rice cooker, cooker, and range hood\nWindows overlooking the swimming pool', 'EASTWOOD', 'fully furnished studio type residential condo in eastwood legrand 3 eastwood city quezon city'),
+(226, 'H32609', 'STUDIO', 'UF', '26IR', 'ELG3', 'Unfurnished 110sqm 2-bedroom loft type condo\nlocated in Eastwood Legrand 3\nEastwood City, Quezon City\n\n2 bedrooms\n1 toilet & bathroom with tub and hot shower\n1 toilet & bathroom with walk-in shower and water heater\nSpacious living and dining areas\nKitchen with built-in cabinets, 4-burner stove with oven, range hood\nWith 3 AC', 'EASTWOOD', 'fully furnished 2-bedroom loft residential condo in eastwood legrand 3 eastwood city quezon city'),
+(251, 'I11122', 'STUDIO', 'UF', '11V', 'OE', 'Unfurnished 24sqm studio type condo\r\nlocated in One Eastwood\r\nEastwood City, Quezon City\r\n\r\n1 toilet and bathroom\r\nLiving, dining and kitchen\r\nprovision for washing machine in the kitchen\r\nwith aircon, stove and cooker', 'EASTWOOD', 'unfurnished studio residential condo in one eastwood eastwood city quezon city'),
+(252, 'I11123', 'STUDIO', 'UF', '11W', 'OE', 'Unfurnished 24sqm studio type condo\r\nlocated in One Eastwood\r\nEastwood City, Quezon City\r\n\r\n1 toilet and bathroom\r\nLiving, dining and kitchen\r\nprovision for washing machine in the kitchen\r\nwith aircon, stove and cooker', 'EASTWOOD', 'unfurnished studio 25sqm residential condo in one eastwood eastwood city quezon city'),
+(253, 'I14520', '1BR', 'FF', '45T', 'OE', 'Fully furnished 40sqm 1-bedroom\r\nlocated in One Eastwood\r\nEastwood City, Quezon City\r\n\r\nBedroom with big bed, built-in cabinets, dresser, and AC\n1 toilet and bathroom\r with hot shower\nLiving area with sofa, center table, and AC\nDining area with 4-seater with 4 chairs\nFully equipped kitchen\nprovision for washing machine in the kitchen\r', 'EASTWOOD', 'fully furnished studio 40sqm residential condo in one eastwood eastwood city quezon city'),
+(301, 'IBM-DY100', 'OFFICE', 'SFIT', 'IBM-DY100', 'IBM', 'Office space\r 100sqm in IBM Plaza, Eastwood City\n\nIBM Plaza Is A 30-storey Commercial Tower For Offices And Headquarters. This Building Is PEZA Accredited And Is Located In An Economic Zone For IT-driven Companies And Businesses.\n\nEastwood City Is Megaworld\'s First-ever And Most Successful Integrated Township Project That Offers Complete Facilities, Amenities, And Establishments For Living, Working, Playing, And Shopping In The Philippines. Eastwood Is Also Known As The Philippines\\\' First Cyberpark, Home To The Largest Business Process Outsourcing (BPO) Locators. The Eastwood City Cyberpark Is Topped With Business Centers That House IT Companies Putting The Country On The Global Map Of Information Technology, It Is Also Listed As An Approved IT Center By The Philippine Economic Zone Authority (PEZA)', 'EASTWOOD', 'semi-fitted office space in ibm plaza eastwood city quezon city'),
+(302, 'IBM-DY176', 'OFFICE', 'SFIT', 'IBM-DY176', 'IBM', 'Office space\r 175.84sqm in IBM Plaza, Eastwood City\n\nIBM Plaza Is A 30-storey Commercial Tower For Offices And Headquarters. This Building Is PEZA Accredited And Is Located In An Economic Zone For IT-driven Companies And Businesses.\n\nEastwood City Is Megaworld\'s First-ever And Most Successful Integrated Township Project That Offers Complete Facilities, Amenities, And Establishments For Living, Working, Playing, And Shopping In The Philippines. Eastwood Is Also Known As The Philippines\\\' First Cyberpark, Home To The Largest Business Process Outsourcing (BPO) Locators. The Eastwood City Cyberpark Is Topped With Business Centers That House IT Companies Putting The Country On The Global Map Of Information Technology, It Is Also Listed As An Approved IT Center By The Philippine Economic Zone Authority (PEZA)', 'EASTWOOD', 'semi-fitted office space in ibm plaza eastwood city bagumbayan qc'),
+(303, 'IBM-DY233', 'OFFICE', 'SFIT', 'IBM-DY233', 'IBM', 'Office space\r 232.88sqm in IBM Plaza, Eastwood City\n\nIBM Plaza Is A 30-storey Commercial Tower For Offices And Headquarters. This Building Is PEZA Accredited And Is Located In An Economic Zone For IT-driven Companies And Businesses.\n\nEastwood City Is Megaworld\'s First-ever And Most Successful Integrated Township Project That Offers Complete Facilities, Amenities, And Establishments For Living, Working, Playing, And Shopping In The Philippines. Eastwood Is Also Known As The Philippines\\\' First Cyberpark, Home To The Largest Business Process Outsourcing (BPO) Locators. The Eastwood City Cyberpark Is Topped With Business Centers That House IT Companies Putting The Country On The Global Map Of Information Technology, It Is Also Listed As An Approved IT Center By The Philippine Economic Zone Authority (PEZA)', 'EASTWOOD', 'ibm plaza semi-fitted office space in eastwood city bagumbayan qc'),
+(304, 'IBM-DY265', 'OFFICE', 'SFIT', 'IBM-DY265', 'IBM', 'Office space\r265sqm in IBM Plaza, Eastwood City\n\nIBM Plaza Is A 30-storey Commercial Tower For Offices And Headquarters. This Building Is PEZA Accredited And Is Located In An Economic Zone For IT-driven Companies And Businesses.\n\nEastwood City Is Megaworld\'s First-ever And Most Successful Integrated Township Project That Offers Complete Facilities, Amenities, And Establishments For Living, Working, Playing, And Shopping In The Philippines. Eastwood Is Also Known As The Philippines\\\' First Cyberpark, Home To The Largest Business Process Outsourcing (BPO) Locators. The Eastwood City Cyberpark Is Topped With Business Centers That House IT Companies Putting The Country On The Global Map Of Information Technology, It Is Also Listed As An Approved IT Center By The Philippine Economic Zone Authority (PEZA)', 'EASTWOOD', 'ibm plaza office space semi-fitted in eastwood city bagumbayan qc'),
+(305, 'IBM-DY750', 'OFFICE', 'SFIT', 'IBM-DY750', 'IBM', 'Office space\r 501.2sqm & 248.8sqm in IBM Plaza, Eastwood City\n\nIBM Plaza Is A 30-storey Commercial Tower For Offices And Headquarters. This Building Is PEZA Accredited And Is Located In An Economic Zone For IT-driven Companies And Businesses.\n\nEastwood City Is Megaworld\'s First-ever And Most Successful Integrated Township Project That Offers Complete Facilities, Amenities, And Establishments For Living, Working, Playing, And Shopping In The Philippines. Eastwood Is Also Known As The Philippines\\\' First Cyberpark, Home To The Largest Business Process Outsourcing (BPO) Locators. The Eastwood City Cyberpark Is Topped With Business Centers That House IT Companies Putting The Country On The Global Map Of Information Technology, It Is Also Listed As An Approved IT Center By The Philippine Economic Zone Authority (PEZA)', 'EASTWOOD', 'ibm plaza office space semi-fitted in eastwood city libis quezon city'),
+(401, 'OURN0902', '1BR', 'FF', '9B', 'OURN ', 'Fully furnished one bedroom condo\r\nLocated in One Uptown Residence\r\nBonifacio Global City, Taguig City\r\n\r\n36.5 sqm very 1-bedroom, with 2 aircon & 1 toilet and bathroom\r\n ', 'OTHER', 'fully furnished 1-bedroom in one uptown residences bonifacio global city taguig city'),
+(402, 'OURN0905', '1BR', 'FF', '9E', 'OURN', 'Move to Bonifacio Global City, the newest community in Metro Manila\r\nAnd enjoy the comfort and convenience of a high-end living\nLocated across The Grand Hyatt Hotel in Uptown BGC, Taguig City\n\nFully furnished one-bedroom condo for rent in One Uptown Residence\r\n36.5sqm 1-bedroom with 1 toilet and bathroom\nWith 2 split-type aircon, hot shower, washing machine, 43\\\" smart TV, fully-equipped kitchen, 2-seater dining, 3-seater sofa with center table, study table with comfortable chair, double-size bed, and built-in cabinets\r.\n\nBuilding has a leisure swimming pool, lap pool, fitness gym, dance studio, garden, jogging path, children\\\'s outdoor and indoor play areas, spa & massage rooms, entertainment room, 2 large function rooms with overspill areas, and 2 multi-purpose areas for basketball/tennis/large functions.', 'OTHER', 'fully furnished 1-bedroom in one uptown residences bgc taguig city'),
+(431, 'BGCMARIDIEN2-2605', '1BR', 'UF', 'BGC2605', 'BGC-MARIDIEN2', 'Fully furnished one bedroom condo\r\nLocated in Two Maridien\r\nBonifacio Global City, Taguig City\r\n\r\n64 sqm very spacious 1-bedroom with balcony, with 2 aircon & 1 toilet and bathroom\r\n ', 'OTHER', 'Ayala Maridien 1-bedroom condo in Bonifcio Global City Taguig City');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `tblads`
+--
+ALTER TABLE `tblads`
+  ADD PRIMARY KEY (`recno`),
+  ADD UNIQUE KEY `listingno` (`adno`);
+
+--
+-- Indexes for table `tblbldg`
+--
+ALTER TABLE `tblbldg`
+  ADD PRIMARY KEY (`recno`),
+  ADD UNIQUE KEY `bldgcode` (`bldgcode`);
+
+--
+-- Indexes for table `tblcategory`
+--
+ALTER TABLE `tblcategory`
+  ADD PRIMARY KEY (`recno`),
+  ADD UNIQUE KEY `categorycode` (`categorycode`);
+
+--
+-- Indexes for table `tblmincontract`
+--
+ALTER TABLE `tblmincontract`
+  ADD PRIMARY KEY (`recno`);
+
+--
+-- Indexes for table `tblsetup`
+--
+ALTER TABLE `tblsetup`
+  ADD PRIMARY KEY (`recno`),
+  ADD UNIQUE KEY `setupcode` (`setupcode`);
+
+--
+-- Indexes for table `tblunit`
+--
+ALTER TABLE `tblunit`
+  ADD PRIMARY KEY (`recno`),
+  ADD UNIQUE KEY `unitcode` (`unitcode`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tblads`
+--
+ALTER TABLE `tblads`
+  MODIFY `recno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=216;
+
+--
+-- AUTO_INCREMENT for table `tblbldg`
+--
+ALTER TABLE `tblbldg`
+  MODIFY `recno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
+--
+-- AUTO_INCREMENT for table `tblcategory`
+--
+ALTER TABLE `tblcategory`
+  MODIFY `recno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `tblmincontract`
+--
+ALTER TABLE `tblmincontract`
+  MODIFY `recno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
+--
+-- AUTO_INCREMENT for table `tblunit`
+--
+ALTER TABLE `tblunit`
+  MODIFY `recno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=432;
+COMMIT;

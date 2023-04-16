@@ -1,0 +1,10 @@
+RewriteEngine on
+
+
+# REWRITE URL
+# ^([^\.]+)$ means rewrite all files
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+RewriteRule ^for-rent/([0-9a-zA-Z]+) rental-property-details.php?u=$1 [NC,L]
